@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complete Yo-quiz (English)</title>
+    <!-- Frase de autor en la esquina superior derecha -->
+<div style="position: absolute; top: 10px; right: 10px; font-size: 14px; z-index: 1000;">
+    <p style="margin: 0;">
+        Made by 
+        <a href="https://x.com/salty_baconV2" target="_blank" style="text-decoration: none; color: #007bff;">
+            @salty_baconV2
+        </a>
+    </p>
+</div>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffe066, #e6b800);
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .quiz-title h1 {
+            text-align: center;
+            color: black;
+            padding: 1px;
+            font-size: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .yo-kai-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .yo-kai-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 3px;
+            transition: transform 0.3s ease; /* Transición suave */
+        }
+
+        input {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .info p {
+            color: white;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        /* Animación de aparición y reducción de tamaño */
+        @keyframes appearAndShrink {
+            0% {
+                transform: scale(1.5); /* Más grande */
+                opacity: 1; /* Totalmente visible */
+            }
+            100% {
+                transform: scale(1); /* Tamaño normal */
+                opacity: 1; /* Mantener visibilidad */
+            }
+        }
+
+        /* Clase para activar la animación */
+        .yokai-unlocked {
+            animation: appearAndShrink 0.5s ease-in-out; /* Duración y suavidad */
+            z-index: 10; /* Asegura que esté encima durante la animación */
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-title">
+        <h1>The Complete Yo-quiz (3DS-Switch)</h1>
+    </div>
+    <div class="container">
+        <div class="yo-kai-icons">
+<div style="
+    width: calc(100% - 40px);
+    margin: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+">
+    Yo-kai Watch
+</div>
+            <img id="yo-kai1" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai2" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai3" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai4" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai5" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai6" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai7" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai8" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai9" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai10" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai11" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai12" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai13" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai14" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai15" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai16" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai17" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai18" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai19" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai20" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai21" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai22" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai23" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai24" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai25" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai26" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai27" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai28" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai29" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai30" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai31" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai32" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai33" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai34" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai35" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai36" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai37" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai38" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai39" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai40" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai41" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai42" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai43" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai44" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai45" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai46" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai47" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai48" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai49" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai50" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai51" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai52" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai53" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai54" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai55" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai56" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai57" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai58" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai59" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai60" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai61" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai62" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai63" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai64" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai65" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai66" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai67" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai68" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai69" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai70" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai71" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai72" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai73" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai74" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai75" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai76" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai77" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai78" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai79" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai80" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai81" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai82" src="no-kai.png" alt="no-kai">
+            <img id="yo-kai83" src="no-kai.png" alt="no-kai">
+<img id="yo-kai84" src="no-kai.png" alt="no-kai">
+<img id="yo-kai85" src="no-kai.png" alt="no-kai">
+<img id="yo-kai86" src="no-kai.png" alt="no-kai">
+<img id="yo-kai87" src="no-kai.png" alt="no-kai">
+<img id="yo-kai88" src="no-kai.png" alt="no-kai">
+<img id="yo-kai89" src="no-kai.png" alt="no-kai">
+<img id="yo-kai90" src="no-kai.png" alt="no-kai">
+<img id="yo-kai91" src="no-kai.png" alt="no-kai">
+<img id="yo-kai92" src="no-kai.png" alt="no-kai">
+<img id="yo-kai93" src="no-kai.png" alt="no-kai">
+<img id="yo-kai94" src="no-kai.png" alt="no-kai">
+<img id="yo-kai95" src="no-kai.png" alt="no-kai">
+<img id="yo-kai96" src="no-kai.png" alt="no-kai">
+<img id="yo-kai97" src="no-kai.png" alt="no-kai">
+<img id="yo-kai98" src="no-kai.png" alt="no-kai">
+<img id="yo-kai99" src="no-kai.png" alt="no-kai">
+<img id="yo-kai100" src="no-kai.png" alt="no-kai">
+<img id="yo-kai101" src="no-kai.png" alt="no-kai">
+<img id="yo-kai102" src="no-kai.png" alt="no-kai">
+<img id="yo-kai103" src="no-kai.png" alt="no-kai">
+<img id="yo-kai104" src="no-kai.png" alt="no-kai">
+<img id="yo-kai105" src="no-kai.png" alt="no-kai">
+<img id="yo-kai106" src="no-kai.png" alt="no-kai">
+<img id="yo-kai107" src="no-kai.png" alt="no-kai">
+<img id="yo-kai108" src="no-kai.png" alt="no-kai">
+<img id="yo-kai109" src="no-kai.png" alt="no-kai">
+<img id="yo-kai110" src="no-kai.png" alt="no-kai">
+<img id="yo-kai111" src="no-kai.png" alt="no-kai">
+<img id="yo-kai112" src="no-kai.png" alt="no-kai">
+<img id="yo-kai113" src="no-kai.png" alt="no-kai">
+<img id="yo-kai114" src="no-kai.png" alt="no-kai">
+<img id="yo-kai115" src="no-kai.png" alt="no-kai">
+<img id="yo-kai116" src="no-kai.png" alt="no-kai">
+<img id="yo-kai117" src="no-kai.png" alt="no-kai">
+<img id="yo-kai118" src="no-kai.png" alt="no-kai">
+<img id="yo-kai119" src="no-kai.png" alt="no-kai">
+<img id="yo-kai120" src="no-kai.png" alt="no-kai">
+<img id="yo-kai121" src="no-kai.png" alt="no-kai">
+<img id="yo-kai122" src="no-kai.png" alt="no-kai">
+<img id="yo-kai123" src="no-kai.png" alt="no-kai">
+<img id="yo-kai124" src="no-kai.png" alt="no-kai">
+<img id="yo-kai125" src="no-kai.png" alt="no-kai">
+<img id="yo-kai126" src="no-kai.png" alt="no-kai">
+<img id="yo-kai127" src="no-kai.png" alt="no-kai">
+<img id="yo-kai128" src="no-kai.png" alt="no-kai">
+<img id="yo-kai129" src="no-kai.png" alt="no-kai">
+<img id="yo-kai130" src="no-kai.png" alt="no-kai">
+<img id="yo-kai131" src="no-kai.png" alt="no-kai">
+<img id="yo-kai132" src="no-kai.png" alt="no-kai">
+<img id="yo-kai133" src="no-kai.png" alt="no-kai">
+<img id="yo-kai134" src="no-kai.png" alt="no-kai">
+<img id="yo-kai135" src="no-kai.png" alt="no-kai">
+<img id="yo-kai136" src="no-kai.png" alt="no-kai">
+<img id="yo-kai137" src="no-kai.png" alt="no-kai">
+<img id="yo-kai138" src="no-kai.png" alt="no-kai">
+<img id="yo-kai139" src="no-kai.png" alt="no-kai">
+<img id="yo-kai140" src="no-kai.png" alt="no-kai">
+<img id="yo-kai141" src="no-kai.png" alt="no-kai">
+<img id="yo-kai142" src="no-kai.png" alt="no-kai">
+<img id="yo-kai143" src="no-kai.png" alt="no-kai">
+<img id="yo-kai144" src="no-kai.png" alt="no-kai">
+<img id="yo-kai145" src="no-kai.png" alt="no-kai">
+<img id="yo-kai146" src="no-kai.png" alt="no-kai">
+<img id="yo-kai147" src="no-kai.png" alt="no-kai">
+<img id="yo-kai148" src="no-kai.png" alt="no-kai">
+<img id="yo-kai149" src="no-kai.png" alt="no-kai">
+<img id="yo-kai150" src="no-kai.png" alt="no-kai">
+<img id="yo-kai151" src="no-kai.png" alt="no-kai">
+<img id="yo-kai152" src="no-kai.png" alt="no-kai">
+<img id="yo-kai153" src="no-kai.png" alt="no-kai">
+<img id="yo-kai154" src="no-kai.png" alt="no-kai">
+<img id="yo-kai155" src="no-kai.png" alt="no-kai">
+<img id="yo-kai156" src="no-kai.png" alt="no-kai">
+<img id="yo-kai157" src="no-kai.png" alt="no-kai">
+<img id="yo-kai158" src="no-kai.png" alt="no-kai">
+<img id="yo-kai159" src="no-kai.png" alt="no-kai">
+<img id="yo-kai160" src="no-kai.png" alt="no-kai">
+<img id="yo-kai161" src="no-kai.png" alt="no-kai">
+<img id="yo-kai162" src="no-kai.png" alt="no-kai">
+<img id="yo-kai163" src="no-kai.png" alt="no-kai">
+<img id="yo-kai164" src="no-kai.png" alt="no-kai">
+<img id="yo-kai165" src="no-kai.png" alt="no-kai">
+<img id="yo-kai166" src="no-kai.png" alt="no-kai">
+<img id="yo-kai167" src="no-kai.png" alt="no-kai">
+<img id="yo-kai168" src="no-kai.png" alt="no-kai">
+<img id="yo-kai169" src="no-kai.png" alt="no-kai">
+<img id="yo-kai170" src="no-kai.png" alt="no-kai">
+<img id="yo-kai171" src="no-kai.png" alt="no-kai">
+<img id="yo-kai172" src="no-kai.png" alt="no-kai">
+<img id="yo-kai173" src="no-kai.png" alt="no-kai">
+<img id="yo-kai174" src="no-kai.png" alt="no-kai">
+<img id="yo-kai175" src="no-kai.png" alt="no-kai">
+<img id="yo-kai176" src="no-kai.png" alt="no-kai">
+<img id="yo-kai177" src="no-kai.png" alt="no-kai">
+<img id="yo-kai178" src="no-kai.png" alt="no-kai">
+<img id="yo-kai179" src="no-kai.png" alt="no-kai">
+<img id="yo-kai180" src="no-kai.png" alt="no-kai">
+<img id="yo-kai181" src="no-kai.png" alt="no-kai">
+<img id="yo-kai182" src="no-kai.png" alt="no-kai">
+<img id="yo-kai183" src="no-kai.png" alt="no-kai">
+<img id="yo-kai184" src="no-kai.png" alt="no-kai">
+<img id="yo-kai185" src="no-kai.png" alt="no-kai">
+<img id="yo-kai186" src="no-kai.png" alt="no-kai">
+<img id="yo-kai187" src="no-kai.png" alt="no-kai">
+<img id="yo-kai188" src="no-kai.png" alt="no-kai">
+<img id="yo-kai189" src="no-kai.png" alt="no-kai">
+<img id="yo-kai190" src="no-kai.png" alt="no-kai">
+<img id="yo-kai191" src="no-kai.png" alt="no-kai">
+<img id="yo-kai192" src="no-kai.png" alt="no-kai">
+<img id="yo-kai193" src="no-kai.png" alt="no-kai">
+<img id="yo-kai194" src="no-kai.png" alt="no-kai">
+<img id="yo-kai195" src="no-kai.png" alt="no-kai">
+<img id="yo-kai196" src="no-kai.png" alt="no-kai">
+<img id="yo-kai197" src="no-kai.png" alt="no-kai">
+<img id="yo-kai198" src="no-kai.png" alt="no-kai">
+<img id="yo-kai199" src="no-kai.png" alt="no-kai">
+<img id="yo-kai200" src="no-kai.png" alt="no-kai">
+<img id="yo-kai201" src="no-kai.png" alt="no-kai">
+<img id="yo-kai202" src="no-kai.png" alt="no-kai">
+<img id="yo-kai203" src="no-kai.png" alt="no-kai">
+<img id="yo-kai204" src="no-kai.png" alt="no-kai">
+<img id="yo-kai205" src="no-kai.png" alt="no-kai">
+<img id="yo-kai206" src="no-kai.png" alt="no-kai">
+<img id="yo-kai207" src="no-kai.png" alt="no-kai">
+<img id="yo-kai208" src="no-kai.png" alt="no-kai">
+<img id="yo-kai209" src="no-kai.png" alt="no-kai">
+<img id="yo-kai210" src="no-kai.png" alt="no-kai">
+<img id="yo-kai211" src="no-kai.png" alt="no-kai">
+<img id="yo-kai212" src="no-kai.png" alt="no-kai">
+<img id="yo-kai213" src="no-kai.png" alt="no-kai">
+<img id="yo-kai214" src="no-kai.png" alt="no-kai">
+<img id="yo-kai215" src="no-kai.png" alt="no-kai">
+<img id="yo-kai216" src="no-kai.png" alt="no-kai">
+<img id="yo-kai217" src="no-kai.png" alt="no-kai">
+<img id="yo-kai218" src="no-kai.png" alt="no-kai">
+<img id="yo-kai219" src="no-kai.png" alt="no-kai">
+<img id="yo-kai220" src="no-kai.png" alt="no-kai">
+<img id="yo-kai221" src="no-kai.png" alt="no-kai">
+<img id="yo-kai222" src="no-kai.png" alt="no-kai">
+<img id="yo-kai223" src="no-kai.png" alt="no-kai">
+<img id="yo-kai224" src="no-kai.png" alt="no-kai">
+<img id="yo-kai225" src="no-kai.png" alt="no-kai">
+<img id="yo-kai226" src="no-kai.png" alt="no-kai">
+<img id="yo-kai227" src="no-kai.png" alt="no-kai">
+<img id="yo-kai228" src="no-kai.png" alt="no-kai">
+<img id="yo-kai229" src="no-kai.png" alt="no-kai">
+<img id="yo-kai230" src="no-kai.png" alt="no-kai">
+<img id="yo-kai231" src="no-kai.png" alt="no-kai">
+<img id="yo-kai232" src="no-kai.png" alt="no-kai">
+<img id="yo-kai233" src="no-kai.png" alt="no-kai">
+<img id="yo-kai234" src="no-kai.png" alt="no-kai">
+<img id="yo-kai235" src="no-kai.png" alt="no-kai">
+<img id="yo-kai236" src="no-kai.png" alt="no-kai">
+<img id="yo-kai237" src="no-kai.png" alt="no-kai">
+<img id="yo-kai238" src="no-kai.png" alt="no-kai">
+<img id="yo-kai239" src="no-kai.png" alt="no-kai">
+<img id="yo-kai240" src="no-kai.png" alt="no-kai">
+<img id="yo-kai241" src="no-kai.png" alt="no-kai">
+<img id="yo-kai242" src="no-kai.png" alt="no-kai">
+<img id="yo-kai243" src="no-kai.png" alt="no-kai">
+<img id="yo-kai244" src="no-kai.png" alt="no-kai">
+<img id="yo-kai245" src="no-kai.png" alt="no-kai">
+<div style="
+    width: calc(100% - 40px);
+    margin: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+">
+    Yo-kai Watch 2
+</div>
+
+<img id="yo-kai246" src="no-kai.png" alt="no-kai">
+<img id="yo-kai247" src="no-kai.png" alt="no-kai">
+<img id="yo-kai248" src="no-kai.png" alt="no-kai">
+<img id="yo-kai249" src="no-kai.png" alt="no-kai">
+<img id="yo-kai250" src="no-kai.png" alt="no-kai">
+<img id="yo-kai251" src="no-kai.png" alt="no-kai">
+<img id="yo-kai252" src="no-kai.png" alt="no-kai">
+<img id="yo-kai253" src="no-kai.png" alt="no-kai">
+<img id="yo-kai254" src="no-kai.png" alt="no-kai">
+<img id="yo-kai255" src="no-kai.png" alt="no-kai">
+<img id="yo-kai256" src="no-kai.png" alt="no-kai">
+<img id="yo-kai257" src="no-kai.png" alt="no-kai">
+<img id="yo-kai258" src="no-kai.png" alt="no-kai">
+<img id="yo-kai259" src="no-kai.png" alt="no-kai">
+<img id="yo-kai260" src="no-kai.png" alt="no-kai">
+<img id="yo-kai261" src="no-kai.png" alt="no-kai">
+<img id="yo-kai262" src="no-kai.png" alt="no-kai">
+<img id="yo-kai263" src="no-kai.png" alt="no-kai">
+<img id="yo-kai264" src="no-kai.png" alt="no-kai">
+<img id="yo-kai265" src="no-kai.png" alt="no-kai">
+<img id="yo-kai266" src="no-kai.png" alt="no-kai">
+<img id="yo-kai267" src="no-kai.png" alt="no-kai">
+<img id="yo-kai268" src="no-kai.png" alt="no-kai">
+<img id="yo-kai269" src="no-kai.png" alt="no-kai">
+<img id="yo-kai270" src="no-kai.png" alt="no-kai">
+<img id="yo-kai271" src="no-kai.png" alt="no-kai">
+<img id="yo-kai272" src="no-kai.png" alt="no-kai">
+<img id="yo-kai273" src="no-kai.png" alt="no-kai">
+<img id="yo-kai274" src="no-kai.png" alt="no-kai">
+<img id="yo-kai275" src="no-kai.png" alt="no-kai">
+<img id="yo-kai276" src="no-kai.png" alt="no-kai">
+<img id="yo-kai277" src="no-kai.png" alt="no-kai">
+<img id="yo-kai278" src="no-kai.png" alt="no-kai">
+<img id="yo-kai279" src="no-kai.png" alt="no-kai">
+<img id="yo-kai280" src="no-kai.png" alt="no-kai">
+<img id="yo-kai281" src="no-kai.png" alt="no-kai">
+<img id="yo-kai282" src="no-kai.png" alt="no-kai">
+<img id="yo-kai283" src="no-kai.png" alt="no-kai">
+<img id="yo-kai284" src="no-kai.png" alt="no-kai">
+<img id="yo-kai285" src="no-kai.png" alt="no-kai">
+<img id="yo-kai286" src="no-kai.png" alt="no-kai">
+<img id="yo-kai287" src="no-kai.png" alt="no-kai">
+<img id="yo-kai288" src="no-kai.png" alt="no-kai">
+<img id="yo-kai289" src="no-kai.png" alt="no-kai">
+<img id="yo-kai290" src="no-kai.png" alt="no-kai">
+<img id="yo-kai291" src="no-kai.png" alt="no-kai">
+<img id="yo-kai292" src="no-kai.png" alt="no-kai">
+<img id="yo-kai293" src="no-kai.png" alt="no-kai">
+<img id="yo-kai294" src="no-kai.png" alt="no-kai">
+<img id="yo-kai295" src="no-kai.png" alt="no-kai">
+<img id="yo-kai296" src="no-kai.png" alt="no-kai">
+<img id="yo-kai297" src="no-kai.png" alt="no-kai">
+<img id="yo-kai298" src="no-kai.png" alt="no-kai">
+<img id="yo-kai299" src="no-kai.png" alt="no-kai">
+<img id="yo-kai300" src="no-kai.png" alt="no-kai">
+<img id="yo-kai301" src="no-kai.png" alt="no-kai">
+<img id="yo-kai302" src="no-kai.png" alt="no-kai">
+<img id="yo-kai303" src="no-kai.png" alt="no-kai">
+<img id="yo-kai304" src="no-kai.png" alt="no-kai">
+<img id="yo-kai305" src="no-kai.png" alt="no-kai">
+<img id="yo-kai306" src="no-kai.png" alt="no-kai">
+<img id="yo-kai307" src="no-kai.png" alt="no-kai">
+<img id="yo-kai308" src="no-kai.png" alt="no-kai">
+<img id="yo-kai309" src="no-kai.png" alt="no-kai">
+<img id="yo-kai310" src="no-kai.png" alt="no-kai">
+<img id="yo-kai311" src="no-kai.png" alt="no-kai">
+<img id="yo-kai312" src="no-kai.png" alt="no-kai">
+<img id="yo-kai313" src="no-kai.png" alt="no-kai">
+<img id="yo-kai314" src="no-kai.png" alt="no-kai">
+<img id="yo-kai315" src="no-kai.png" alt="no-kai">
+<img id="yo-kai316" src="no-kai.png" alt="no-kai">
+<img id="yo-kai317" src="no-kai.png" alt="no-kai">
+<img id="yo-kai318" src="no-kai.png" alt="no-kai">
+<img id="yo-kai319" src="no-kai.png" alt="no-kai">
+<img id="yo-kai320" src="no-kai.png" alt="no-kai">
+<img id="yo-kai321" src="no-kai.png" alt="no-kai">
+<img id="yo-kai322" src="no-kai.png" alt="no-kai">
+<img id="yo-kai323" src="no-kai.png" alt="no-kai">
+<img id="yo-kai324" src="no-kai.png" alt="no-kai">
+<img id="yo-kai325" src="no-kai.png" alt="no-kai">
+<img id="yo-kai326" src="no-kai.png" alt="no-kai">
+<img id="yo-kai327" src="no-kai.png" alt="no-kai">
+<img id="yo-kai328" src="no-kai.png" alt="no-kai">
+<img id="yo-kai329" src="no-kai.png" alt="no-kai">
+<img id="yo-kai330" src="no-kai.png" alt="no-kai">
+<img id="yo-kai331" src="no-kai.png" alt="no-kai">
+<img id="yo-kai332" src="no-kai.png" alt="no-kai">
+<img id="yo-kai333" src="no-kai.png" alt="no-kai">
+<img id="yo-kai334" src="no-kai.png" alt="no-kai">
+<img id="yo-kai335" src="no-kai.png" alt="no-kai">
+<img id="yo-kai336" src="no-kai.png" alt="no-kai">
+<img id="yo-kai337" src="no-kai.png" alt="no-kai">
+<img id="yo-kai338" src="no-kai.png" alt="no-kai">
+<img id="yo-kai339" src="no-kai.png" alt="no-kai">
+<img id="yo-kai340" src="no-kai.png" alt="no-kai">
+<img id="yo-kai341" src="no-kai.png" alt="no-kai">
+<img id="yo-kai342" src="no-kai.png" alt="no-kai">
+<img id="yo-kai343" src="no-kai.png" alt="no-kai">
+<img id="yo-kai344" src="no-kai.png" alt="no-kai">
+<img id="yo-kai345" src="no-kai.png" alt="no-kai">
+<img id="yo-kai346" src="no-kai.png" alt="no-kai">
+<img id="yo-kai347" src="no-kai.png" alt="no-kai">
+<img id="yo-kai348" src="no-kai.png" alt="no-kai">
+<img id="yo-kai349" src="no-kai.png" alt="no-kai">
+<img id="yo-kai350" src="no-kai.png" alt="no-kai">
+<img id="yo-kai351" src="no-kai.png" alt="no-kai">
+<img id="yo-kai352" src="no-kai.png" alt="no-kai">
+<img id="yo-kai353" src="no-kai.png" alt="no-kai">
+<img id="yo-kai354" src="no-kai.png" alt="no-kai">
+<img id="yo-kai355" src="no-kai.png" alt="no-kai">
+<img id="yo-kai356" src="no-kai.png" alt="no-kai">
+<img id="yo-kai357" src="no-kai.png" alt="no-kai">
+<img id="yo-kai358" src="no-kai.png" alt="no-kai">
+<img id="yo-kai359" src="no-kai.png" alt="no-kai">
+<img id="yo-kai360" src="no-kai.png" alt="no-kai">
+<img id="yo-kai361" src="no-kai.png" alt="no-kai">
+<img id="yo-kai362" src="no-kai.png" alt="no-kai">
+<img id="yo-kai363" src="no-kai.png" alt="no-kai">
+<img id="yo-kai364" src="no-kai.png" alt="no-kai">
+<img id="yo-kai365" src="no-kai.png" alt="no-kai">
+<img id="yo-kai366" src="no-kai.png" alt="no-kai">
+<img id="yo-kai367" src="no-kai.png" alt="no-kai">
+<img id="yo-kai368" src="no-kai.png" alt="no-kai">
+<img id="yo-kai369" src="no-kai.png" alt="no-kai">
+<img id="yo-kai370" src="no-kai.png" alt="no-kai">
+<img id="yo-kai371" src="no-kai.png" alt="no-kai">
+<img id="yo-kai372" src="no-kai.png" alt="no-kai">
+<img id="yo-kai373" src="no-kai.png" alt="no-kai">
+<img id="yo-kai374" src="no-kai.png" alt="no-kai">
+<img id="yo-kai375" src="no-kai.png" alt="no-kai">
+<img id="yo-kai376" src="no-kai.png" alt="no-kai">
+<img id="yo-kai377" src="no-kai.png" alt="no-kai">
+<img id="yo-kai378" src="no-kai.png" alt="no-kai">
+<img id="yo-kai379" src="no-kai.png" alt="no-kai">
+<img id="yo-kai380" src="no-kai.png" alt="no-kai">
+<img id="yo-kai381" src="no-kai.png" alt="no-kai">
+<img id="yo-kai382" src="no-kai.png" alt="no-kai">
+<img id="yo-kai383" src="no-kai.png" alt="no-kai">
+<img id="yo-kai384" src="no-kai.png" alt="no-kai">
+<img id="yo-kai385" src="no-kai.png" alt="no-kai">
+<img id="yo-kai386" src="no-kai.png" alt="no-kai">
+<img id="yo-kai387" src="no-kai.png" alt="no-kai">
+<img id="yo-kai388" src="no-kai.png" alt="no-kai">
+<img id="yo-kai389" src="no-kai.png" alt="no-kai">
+<img id="yo-kai390" src="no-kai.png" alt="no-kai">
+<img id="yo-kai391" src="no-kai.png" alt="no-kai">
+<img id="yo-kai392" src="no-kai.png" alt="no-kai">
+<img id="yo-kai393" src="no-kai.png" alt="no-kai">
+<img id="yo-kai394" src="no-kai.png" alt="no-kai">
+<img id="yo-kai395" src="no-kai.png" alt="no-kai">
+<img id="yo-kai396" src="no-kai.png" alt="no-kai">
+<img id="yo-kai397" src="no-kai.png" alt="no-kai">
+<img id="yo-kai398" src="no-kai.png" alt="no-kai">
+<img id="yo-kai399" src="no-kai.png" alt="no-kai">
+<img id="yo-kai400" src="no-kai.png" alt="no-kai">
+<img id="yo-kai401" src="no-kai.png" alt="no-kai">
+<img id="yo-kai402" src="no-kai.png" alt="no-kai">
+<img id="yo-kai403" src="no-kai.png" alt="no-kai">
+<img id="yo-kai404" src="no-kai.png" alt="no-kai">
+<img id="yo-kai405" src="no-kai.png" alt="no-kai">
+<img id="yo-kai406" src="no-kai.png" alt="no-kai">
+<img id="yo-kai407" src="no-kai.png" alt="no-kai">
+<img id="yo-kai408" src="no-kai.png" alt="no-kai">
+<img id="yo-kai409" src="no-kai.png" alt="no-kai">
+<img id="yo-kai410" src="no-kai.png" alt="no-kai">
+<img id="yo-kai411" src="no-kai.png" alt="no-kai">
+<img id="yo-kai412" src="no-kai.png" alt="no-kai">
+<img id="yo-kai413" src="no-kai.png" alt="no-kai">
+<img id="yo-kai414" src="no-kai.png" alt="no-kai">
+<img id="yo-kai415" src="no-kai.png" alt="no-kai">
+<img id="yo-kai416" src="no-kai.png" alt="no-kai">
+<img id="yo-kai417" src="no-kai.png" alt="no-kai">
+<img id="yo-kai418" src="no-kai.png" alt="no-kai">
+<img id="yo-kai419" src="no-kai.png" alt="no-kai">
+<img id="yo-kai420" src="no-kai.png" alt="no-kai">
+<img id="yo-kai421" src="no-kai.png" alt="no-kai">
+<img id="yo-kai422" src="no-kai.png" alt="no-kai">
+<img id="yo-kai423" src="no-kai.png" alt="no-kai">
+<img id="yo-kai424" src="no-kai.png" alt="no-kai">
+<img id="yo-kai425" src="no-kai.png" alt="no-kai">
+<img id="yo-kai426" src="no-kai.png" alt="no-kai">
+<img id="yo-kai427" src="no-kai.png" alt="no-kai">
+<img id="yo-kai428" src="no-kai.png" alt="no-kai">
+<img id="yo-kai429" src="no-kai.png" alt="no-kai">
+<img id="yo-kai430" src="no-kai.png" alt="no-kai">
+<img id="yo-kai431" src="no-kai.png" alt="no-kai">
+<img id="yo-kai432" src="no-kai.png" alt="no-kai">
+<img id="yo-kai433" src="no-kai.png" alt="no-kai">
+<img id="yo-kai434" src="no-kai.png" alt="no-kai">
+<img id="yo-kai435" src="no-kai.png" alt="no-kai">
+<img id="yo-kai436" src="no-kai.png" alt="no-kai">
+<img id="yo-kai437" src="no-kai.png" alt="no-kai">
+<img id="yo-kai438" src="no-kai.png" alt="no-kai">
+<img id="yo-kai439" src="no-kai.png" alt="no-kai">
+<img id="yo-kai440" src="no-kai.png" alt="no-kai">
+<img id="yo-kai441" src="no-kai.png" alt="no-kai">
+<img id="yo-kai442" src="no-kai.png" alt="no-kai">
+<img id="yo-kai443" src="no-kai.png" alt="no-kai">
+<img id="yo-kai444" src="no-kai.png" alt="no-kai">
+<img id="yo-kai445" src="no-kai.png" alt="no-kai">
+<img id="yo-kai446" src="no-kai.png" alt="no-kai">
+<img id="yo-kai447" src="no-kai.png" alt="no-kai">
+<img id="yo-kai448" src="no-kai.png" alt="no-kai">
+<div style="
+    width: calc(100% - 40px);
+    margin: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+">
+    Yo-kai Watch Blasters
+</div>
+
+<img id="yo-kai449" src="no-kai.png" alt="no-kai">
+<img id="yo-kai450" src="no-kai.png" alt="no-kai">
+<img id="yo-kai451" src="no-kai.png" alt="no-kai">
+<img id="yo-kai452" src="no-kai.png" alt="no-kai">
+<img id="yo-kai453" src="no-kai.png" alt="no-kai">
+<img id="yo-kai454" src="no-kai.png" alt="no-kai">
+<img id="yo-kai455" src="no-kai.png" alt="no-kai">
+<img id="yo-kai456" src="no-kai.png" alt="no-kai">
+<img id="yo-kai457" src="no-kai.png" alt="no-kai">
+<img id="yo-kai458" src="no-kai.png" alt="no-kai">
+<img id="yo-kai459" src="no-kai.png" alt="no-kai">
+<img id="yo-kai460" src="no-kai.png" alt="no-kai">
+<img id="yo-kai461" src="no-kai.png" alt="no-kai">
+<img id="yo-kai462" src="no-kai.png" alt="no-kai">
+<img id="yo-kai463" src="no-kai.png" alt="no-kai">
+<img id="yo-kai464" src="no-kai.png" alt="no-kai">
+<img id="yo-kai465" src="no-kai.png" alt="no-kai">
+<img id="yo-kai466" src="no-kai.png" alt="no-kai">
+<img id="yo-kai467" src="no-kai.png" alt="no-kai">
+<img id="yo-kai468" src="no-kai.png" alt="no-kai">
+<img id="yo-kai469" src="no-kai.png" alt="no-kai">
+<img id="yo-kai470" src="no-kai.png" alt="no-kai">
+<img id="yo-kai471" src="no-kai.png" alt="no-kai">
+<img id="yo-kai472" src="no-kai.png" alt="no-kai">
+<img id="yo-kai473" src="no-kai.png" alt="no-kai">
+<img id="yo-kai474" src="no-kai.png" alt="no-kai">
+<img id="yo-kai475" src="no-kai.png" alt="no-kai">
+<img id="yo-kai476" src="no-kai.png" alt="no-kai">
+<img id="yo-kai477" src="no-kai.png" alt="no-kai">
+<img id="yo-kai478" src="no-kai.png" alt="no-kai">
+<img id="yo-kai479" src="no-kai.png" alt="no-kai">
+<img id="yo-kai480" src="no-kai.png" alt="no-kai">
+<img id="yo-kai481" src="no-kai.png" alt="no-kai">
+<img id="yo-kai482" src="no-kai.png" alt="no-kai">
+<img id="yo-kai483" src="no-kai.png" alt="no-kai">
+<img id="yo-kai484" src="no-kai.png" alt="no-kai">
+<img id="yo-kai485" src="no-kai.png" alt="no-kai">
+<img id="yo-kai486" src="no-kai.png" alt="no-kai">
+<img id="yo-kai487" src="no-kai.png" alt="no-kai">
+<img id="yo-kai488" src="no-kai.png" alt="no-kai">
+<img id="yo-kai489" src="no-kai.png" alt="no-kai">
+<img id="yo-kai490" src="no-kai.png" alt="no-kai">
+<img id="yo-kai491" src="no-kai.png" alt="no-kai">
+<img id="yo-kai492" src="no-kai.png" alt="no-kai">
+<img id="yo-kai493" src="no-kai.png" alt="no-kai">
+<img id="yo-kai494" src="no-kai.png" alt="no-kai">
+<img id="yo-kai495" src="no-kai.png" alt="no-kai">
+<img id="yo-kai496" src="no-kai.png" alt="no-kai">
+<img id="yo-kai497" src="no-kai.png" alt="no-kai">
+<img id="yo-kai498" src="no-kai.png" alt="no-kai">
+<img id="yo-kai499" src="no-kai.png" alt="no-kai">
+<img id="yo-kai500" src="no-kai.png" alt="no-kai">
+<div style="
+    width: calc(100% - 40px);
+    margin: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+">
+    Yo-kai Watch 3
+</div>
+<img id="yo-kai501" src="no-kai.png" alt="no-kai">
+<img id="yo-kai502" src="no-kai.png" alt="no-kai">
+<img id="yo-kai503" src="no-kai.png" alt="no-kai">
+<img id="yo-kai504" src="no-kai.png" alt="no-kai">
+<img id="yo-kai505" src="no-kai.png" alt="no-kai">
+<img id="yo-kai506" src="no-kai.png" alt="no-kai">
+<img id="yo-kai507" src="no-kai.png" alt="no-kai">
+<img id="yo-kai508" src="no-kai.png" alt="no-kai">
+<img id="yo-kai509" src="no-kai.png" alt="no-kai">
+<img id="yo-kai510" src="no-kai.png" alt="no-kai">
+<img id="yo-kai511" src="no-kai.png" alt="no-kai">
+<img id="yo-kai512" src="no-kai.png" alt="no-kai">
+<img id="yo-kai513" src="no-kai.png" alt="no-kai">
+<img id="yo-kai514" src="no-kai.png" alt="no-kai">
+<img id="yo-kai515" src="no-kai.png" alt="no-kai">
+<img id="yo-kai516" src="no-kai.png" alt="no-kai">
+<img id="yo-kai517" src="no-kai.png" alt="no-kai">
+<img id="yo-kai518" src="no-kai.png" alt="no-kai">
+<img id="yo-kai519" src="no-kai.png" alt="no-kai">
+<img id="yo-kai520" src="no-kai.png" alt="no-kai">
+<img id="yo-kai521" src="no-kai.png" alt="no-kai">
+<img id="yo-kai522" src="no-kai.png" alt="no-kai">
+<img id="yo-kai523" src="no-kai.png" alt="no-kai">
+<img id="yo-kai524" src="no-kai.png" alt="no-kai">
+<img id="yo-kai525" src="no-kai.png" alt="no-kai">
+<img id="yo-kai526" src="no-kai.png" alt="no-kai">
+<img id="yo-kai527" src="no-kai.png" alt="no-kai">
+<img id="yo-kai528" src="no-kai.png" alt="no-kai">
+<img id="yo-kai529" src="no-kai.png" alt="no-kai">
+<img id="yo-kai530" src="no-kai.png" alt="no-kai">
+<img id="yo-kai531" src="no-kai.png" alt="no-kai">
+<img id="yo-kai532" src="no-kai.png" alt="no-kai">
+<img id="yo-kai533" src="no-kai.png" alt="no-kai">
+<img id="yo-kai534" src="no-kai.png" alt="no-kai">
+<img id="yo-kai535" src="no-kai.png" alt="no-kai">
+<img id="yo-kai536" src="no-kai.png" alt="no-kai">
+<img id="yo-kai537" src="no-kai.png" alt="no-kai">
+<img id="yo-kai538" src="no-kai.png" alt="no-kai">
+<img id="yo-kai539" src="no-kai.png" alt="no-kai">
+<img id="yo-kai540" src="no-kai.png" alt="no-kai">
+<img id="yo-kai541" src="no-kai.png" alt="no-kai">
+<img id="yo-kai542" src="no-kai.png" alt="no-kai">
+<img id="yo-kai543" src="no-kai.png" alt="no-kai">
+<img id="yo-kai544" src="no-kai.png" alt="no-kai">
+<img id="yo-kai545" src="no-kai.png" alt="no-kai">
+<img id="yo-kai546" src="no-kai.png" alt="no-kai">
+<img id="yo-kai547" src="no-kai.png" alt="no-kai">
+<img id="yo-kai548" src="no-kai.png" alt="no-kai">
+<img id="yo-kai549" src="no-kai.png" alt="no-kai">
+<img id="yo-kai550" src="no-kai.png" alt="no-kai">
+<img id="yo-kai551" src="no-kai.png" alt="no-kai">
+<img id="yo-kai552" src="no-kai.png" alt="no-kai">
+<img id="yo-kai553" src="no-kai.png" alt="no-kai">
+<img id="yo-kai554" src="no-kai.png" alt="no-kai">
+<img id="yo-kai555" src="no-kai.png" alt="no-kai">
+<img id="yo-kai556" src="no-kai.png" alt="no-kai">
+<img id="yo-kai557" src="no-kai.png" alt="no-kai">
+<img id="yo-kai558" src="no-kai.png" alt="no-kai">
+<img id="yo-kai559" src="no-kai.png" alt="no-kai">
+<img id="yo-kai560" src="no-kai.png" alt="no-kai">
+<img id="yo-kai561" src="no-kai.png" alt="no-kai">
+<img id="yo-kai562" src="no-kai.png" alt="no-kai">
+<img id="yo-kai563" src="no-kai.png" alt="no-kai">
+<img id="yo-kai564" src="no-kai.png" alt="no-kai">
+<img id="yo-kai565" src="no-kai.png" alt="no-kai">
+<img id="yo-kai566" src="no-kai.png" alt="no-kai">
+<img id="yo-kai567" src="no-kai.png" alt="no-kai">
+<img id="yo-kai568" src="no-kai.png" alt="no-kai">
+<img id="yo-kai569" src="no-kai.png" alt="no-kai">
+<img id="yo-kai570" src="no-kai.png" alt="no-kai">
+<img id="yo-kai571" src="no-kai.png" alt="no-kai">
+<img id="yo-kai572" src="no-kai.png" alt="no-kai">
+<img id="yo-kai573" src="no-kai.png" alt="no-kai">
+<img id="yo-kai574" src="no-kai.png" alt="no-kai">
+<img id="yo-kai575" src="no-kai.png" alt="no-kai">
+<img id="yo-kai576" src="no-kai.png" alt="no-kai">
+<img id="yo-kai577" src="no-kai.png" alt="no-kai">
+<img id="yo-kai578" src="no-kai.png" alt="no-kai">
+<img id="yo-kai579" src="no-kai.png" alt="no-kai">
+<img id="yo-kai580" src="no-kai.png" alt="no-kai">
+<img id="yo-kai581" src="no-kai.png" alt="no-kai">
+<img id="yo-kai582" src="no-kai.png" alt="no-kai">
+<img id="yo-kai583" src="no-kai.png" alt="no-kai">
+<img id="yo-kai584" src="no-kai.png" alt="no-kai">
+<img id="yo-kai585" src="no-kai.png" alt="no-kai">
+<img id="yo-kai586" src="no-kai.png" alt="no-kai">
+<img id="yo-kai587" src="no-kai.png" alt="no-kai">
+<img id="yo-kai588" src="no-kai.png" alt="no-kai">
+<img id="yo-kai589" src="no-kai.png" alt="no-kai">
+<img id="yo-kai590" src="no-kai.png" alt="no-kai">
+<img id="yo-kai591" src="no-kai.png" alt="no-kai">
+<img id="yo-kai592" src="no-kai.png" alt="no-kai">
+<img id="yo-kai593" src="no-kai.png" alt="no-kai">
+<img id="yo-kai594" src="no-kai.png" alt="no-kai">
+<img id="yo-kai595" src="no-kai.png" alt="no-kai">
+<img id="yo-kai596" src="no-kai.png" alt="no-kai">
+<img id="yo-kai597" src="no-kai.png" alt="no-kai">
+<img id="yo-kai598" src="no-kai.png" alt="no-kai">
+<img id="yo-kai599" src="no-kai.png" alt="no-kai">
+<img id="yo-kai600" src="no-kai.png" alt="no-kai">
+<img id="yo-kai601" src="no-kai.png" alt="no-kai">
+<img id="yo-kai602" src="no-kai.png" alt="no-kai">
+<img id="yo-kai603" src="no-kai.png" alt="no-kai">
+<img id="yo-kai604" src="no-kai.png" alt="no-kai">
+<img id="yo-kai605" src="no-kai.png" alt="no-kai">
+<img id="yo-kai606" src="no-kai.png" alt="no-kai">
+<img id="yo-kai607" src="no-kai.png" alt="no-kai">
+<img id="yo-kai608" src="no-kai.png" alt="no-kai">
+<img id="yo-kai609" src="no-kai.png" alt="no-kai">
+<img id="yo-kai610" src="no-kai.png" alt="no-kai">
+<img id="yo-kai611" src="no-kai.png" alt="no-kai">
+<img id="yo-kai612" src="no-kai.png" alt="no-kai">
+<img id="yo-kai613" src="no-kai.png" alt="no-kai">
+<img id="yo-kai614" src="no-kai.png" alt="no-kai">
+<img id="yo-kai615" src="no-kai.png" alt="no-kai">
+<img id="yo-kai616" src="no-kai.png" alt="no-kai">
+<img id="yo-kai617" src="no-kai.png" alt="no-kai">
+<img id="yo-kai618" src="no-kai.png" alt="no-kai">
+<img id="yo-kai619" src="no-kai.png" alt="no-kai">
+<img id="yo-kai620" src="no-kai.png" alt="no-kai">
+<img id="yo-kai621" src="no-kai.png" alt="no-kai">
+<img id="yo-kai622" src="no-kai.png" alt="no-kai">
+<img id="yo-kai623" src="no-kai.png" alt="no-kai">
+<img id="yo-kai624" src="no-kai.png" alt="no-kai">
+<img id="yo-kai625" src="no-kai.png" alt="no-kai">
+<img id="yo-kai626" src="no-kai.png" alt="no-kai">
+<img id="yo-kai627" src="no-kai.png" alt="no-kai">
+<img id="yo-kai628" src="no-kai.png" alt="no-kai">
+<img id="yo-kai629" src="no-kai.png" alt="no-kai">
+<img id="yo-kai630" src="no-kai.png" alt="no-kai">
+<img id="yo-kai631" src="no-kai.png" alt="no-kai">
+<img id="yo-kai632" src="no-kai.png" alt="no-kai">
+<img id="yo-kai633" src="no-kai.png" alt="no-kai">
+<img id="yo-kai634" src="no-kai.png" alt="no-kai">
+<img id="yo-kai635" src="no-kai.png" alt="no-kai">
+<img id="yo-kai636" src="no-kai.png" alt="no-kai">
+<img id="yo-kai637" src="no-kai.png" alt="no-kai">
+<img id="yo-kai638" src="no-kai.png" alt="no-kai">
+<img id="yo-kai639" src="no-kai.png" alt="no-kai">
+<img id="yo-kai640" src="no-kai.png" alt="no-kai">
+<img id="yo-kai641" src="no-kai.png" alt="no-kai">
+<img id="yo-kai642" src="no-kai.png" alt="no-kai">
+<img id="yo-kai643" src="no-kai.png" alt="no-kai">
+<img id="yo-kai644" src="no-kai.png" alt="no-kai">
+<img id="yo-kai645" src="no-kai.png" alt="no-kai">
+<img id="yo-kai646" src="no-kai.png" alt="no-kai">
+<img id="yo-kai647" src="no-kai.png" alt="no-kai">
+<img id="yo-kai648" src="no-kai.png" alt="no-kai">
+<img id="yo-kai649" src="no-kai.png" alt="no-kai">
+<img id="yo-kai650" src="no-kai.png" alt="no-kai">
+<img id="yo-kai651" src="no-kai.png" alt="no-kai">
+<img id="yo-kai652" src="no-kai.png" alt="no-kai">
+<img id="yo-kai653" src="no-kai.png" alt="no-kai">
+<img id="yo-kai654" src="no-kai.png" alt="no-kai">
+<img id="yo-kai655" src="no-kai.png" alt="no-kai">
+<img id="yo-kai656" src="no-kai.png" alt="no-kai">
+<img id="yo-kai657" src="no-kai.png" alt="no-kai">
+<img id="yo-kai658" src="no-kai.png" alt="no-kai">
+<img id="yo-kai659" src="no-kai.png" alt="no-kai">
+<img id="yo-kai660" src="no-kai.png" alt="no-kai">
+<img id="yo-kai661" src="no-kai.png" alt="no-kai">
+<img id="yo-kai662" src="no-kai.png" alt="no-kai">
+<img id="yo-kai663" src="no-kai.png" alt="no-kai">
+<img id="yo-kai664" src="no-kai.png" alt="no-kai">
+<img id="yo-kai665" src="no-kai.png" alt="no-kai">
+<img id="yo-kai666" src="no-kai.png" alt="no-kai">
+<img id="yo-kai667" src="no-kai.png" alt="no-kai">
+<img id="yo-kai668" src="no-kai.png" alt="no-kai">
+<img id="yo-kai669" src="no-kai.png" alt="no-kai">
+<img id="yo-kai670" src="no-kai.png" alt="no-kai">
+<img id="yo-kai671" src="no-kai.png" alt="no-kai">
+<img id="yo-kai672" src="no-kai.png" alt="no-kai">
+<img id="yo-kai673" src="no-kai.png" alt="no-kai">
+<img id="yo-kai674" src="no-kai.png" alt="no-kai">
+<img id="yo-kai675" src="no-kai.png" alt="no-kai">
+<img id="yo-kai676" src="no-kai.png" alt="no-kai">
+<img id="yo-kai677" src="no-kai.png" alt="no-kai">
+<img id="yo-kai678" src="no-kai.png" alt="no-kai">
+<img id="yo-kai679" src="no-kai.png" alt="no-kai">
+<img id="yo-kai680" src="no-kai.png" alt="no-kai">
+<img id="yo-kai681" src="no-kai.png" alt="no-kai">
+<img id="yo-kai682" src="no-kai.png" alt="no-kai">
+<img id="yo-kai683" src="no-kai.png" alt="no-kai">
+<img id="yo-kai684" src="no-kai.png" alt="no-kai">
+<img id="yo-kai685" src="no-kai.png" alt="no-kai">
+<img id="yo-kai686" src="no-kai.png" alt="no-kai">
+<img id="yo-kai687" src="no-kai.png" alt="no-kai">
+<img id="yo-kai688" src="no-kai.png" alt="no-kai">
+<img id="yo-kai689" src="no-kai.png" alt="no-kai">
+<img id="yo-kai690" src="no-kai.png" alt="no-kai">
+<img id="yo-kai691" src="no-kai.png" alt="no-kai">
+<img id="yo-kai692" src="no-kai.png" alt="no-kai">
+<img id="yo-kai693" src="no-kai.png" alt="no-kai">
+<img id="yo-kai694" src="no-kai.png" alt="no-kai">
+<img id="yo-kai695" src="no-kai.png" alt="no-kai">
+<img id="yo-kai696" src="no-kai.png" alt="no-kai">
+<img id="yo-kai697" src="no-kai.png" alt="no-kai">
+<img id="yo-kai698" src="no-kai.png" alt="no-kai">
+<img id="yo-kai699" src="no-kai.png" alt="no-kai">
+<img id="yo-kai700" src="no-kai.png" alt="no-kai">
+<img id="yo-kai701" src="no-kai.png" alt="no-kai">
+<img id="yo-kai702" src="no-kai.png" alt="no-kai">
+<img id="yo-kai703" src="no-kai.png" alt="no-kai">
+<img id="yo-kai704" src="no-kai.png" alt="no-kai">
+<img id="yo-kai705" src="no-kai.png" alt="no-kai">
+<img id="yo-kai706" src="no-kai.png" alt="no-kai">
+<img id="yo-kai707" src="no-kai.png" alt="no-kai">
+<img id="yo-kai708" src="no-kai.png" alt="no-kai">
+<img id="yo-kai709" src="no-kai.png" alt="no-kai">
+<img id="yo-kai710" src="no-kai.png" alt="no-kai">
+<img id="yo-kai711" src="no-kai.png" alt="no-kai">
+<img id="yo-kai712" src="no-kai.png" alt="no-kai">
+<img id="yo-kai713" src="no-kai.png" alt="no-kai">
+<img id="yo-kai714" src="no-kai.png" alt="no-kai">
+<img id="yo-kai715" src="no-kai.png" alt="no-kai">
+<img id="yo-kai716" src="no-kai.png" alt="no-kai">
+<img id="yo-kai717" src="no-kai.png" alt="no-kai">
+<img id="yo-kai718" src="no-kai.png" alt="no-kai">
+<img id="yo-kai719" src="no-kai.png" alt="no-kai">
+<img id="yo-kai720" src="no-kai.png" alt="no-kai">
+<img id="yo-kai721" src="no-kai.png" alt="no-kai">
+<img id="yo-kai722" src="no-kai.png" alt="no-kai">
+<img id="yo-kai723" src="no-kai.png" alt="no-kai">
+<img id="yo-kai724" src="no-kai.png" alt="no-kai">
+<img id="yo-kai725" src="no-kai.png" alt="no-kai">
+<img id="yo-kai726" src="no-kai.png" alt="no-kai">
+<img id="yo-kai727" src="no-kai.png" alt="no-kai">
+<img id="yo-kai728" src="no-kai.png" alt="no-kai">
+<img id="yo-kai729" src="no-kai.png" alt="no-kai">
+<img id="yo-kai730" src="no-kai.png" alt="no-kai">
+<img id="yo-kai731" src="no-kai.png" alt="no-kai">
+<img id="yo-kai732" src="no-kai.png" alt="no-kai">
+<img id="yo-kai733" src="no-kai.png" alt="no-kai">
+<img id="yo-kai734" src="no-kai.png" alt="no-kai">
+<img id="yo-kai735" src="no-kai.png" alt="no-kai">
+<img id="yo-kai736" src="no-kai.png" alt="no-kai">
+<img id="yo-kai737" src="no-kai.png" alt="no-kai">
+<img id="yo-kai738" src="no-kai.png" alt="no-kai">
+<img id="yo-kai739" src="no-kai.png" alt="no-kai">
+<img id="yo-kai740" src="no-kai.png" alt="no-kai">
+<img id="yo-kai741" src="no-kai.png" alt="no-kai">
+<img id="yo-kai742" src="no-kai.png" alt="no-kai">
+<img id="yo-kai743" src="no-kai.png" alt="no-kai">
+<img id="yo-kai744" src="no-kai.png" alt="no-kai">
+<img id="yo-kai745" src="no-kai.png" alt="no-kai">
+<img id="yo-kai746" src="no-kai.png" alt="no-kai">
+<img id="yo-kai747" src="no-kai.png" alt="no-kai">
+<img id="yo-kai748" src="no-kai.png" alt="no-kai">
+<img id="yo-kai749" src="no-kai.png" alt="no-kai">
+<img id="yo-kai750" src="no-kai.png" alt="no-kai">
+<img id="yo-kai751" src="no-kai.png" alt="no-kai">
+<img id="yo-kai752" src="no-kai.png" alt="no-kai">
+<img id="yo-kai753" src="no-kai.png" alt="no-kai">
+<img id="yo-kai754" src="no-kai.png" alt="no-kai">
+<img id="yo-kai755" src="no-kai.png" alt="no-kai">
+<img id="yo-kai756" src="no-kai.png" alt="no-kai">
+<img id="yo-kai757" src="no-kai.png" alt="no-kai">
+<img id="yo-kai758" src="no-kai.png" alt="no-kai">
+<img id="yo-kai759" src="no-kai.png" alt="no-kai">
+<img id="yo-kai760" src="no-kai.png" alt="no-kai">
+<img id="yo-kai761" src="no-kai.png" alt="no-kai">
+<img id="yo-kai762" src="no-kai.png" alt="no-kai">
+<img id="yo-kai763" src="no-kai.png" alt="no-kai">
+<img id="yo-kai764" src="no-kai.png" alt="no-kai">
+<img id="yo-kai765" src="no-kai.png" alt="no-kai">
+<img id="yo-kai766" src="no-kai.png" alt="no-kai">
+<img id="yo-kai767" src="no-kai.png" alt="no-kai">
+<img id="yo-kai768" src="no-kai.png" alt="no-kai">
+<img id="yo-kai769" src="no-kai.png" alt="no-kai">
+<img id="yo-kai770" src="no-kai.png" alt="no-kai">
+<img id="yo-kai771" src="no-kai.png" alt="no-kai">
+<img id="yo-kai772" src="no-kai.png" alt="no-kai">
+<img id="yo-kai773" src="no-kai.png" alt="no-kai">
+<img id="yo-kai774" src="no-kai.png" alt="no-kai">
+<img id="yo-kai775" src="no-kai.png" alt="no-kai">
+<img id="yo-kai776" src="no-kai.png" alt="no-kai">
+<img id="yo-kai777" src="no-kai.png" alt="no-kai">
+<img id="yo-kai778" src="no-kai.png" alt="no-kai">
+<img id="yo-kai779" src="no-kai.png" alt="no-kai">
+<img id="yo-kai780" src="no-kai.png" alt="no-kai">
+<img id="yo-kai781" src="no-kai.png" alt="no-kai">
+<img id="yo-kai782" src="no-kai.png" alt="no-kai">
+<img id="yo-kai783" src="no-kai.png" alt="no-kai">
+<img id="yo-kai784" src="no-kai.png" alt="no-kai">
+<img id="yo-kai785" src="no-kai.png" alt="no-kai">
+<img id="yo-kai786" src="no-kai.png" alt="no-kai">
+<img id="yo-kai787" src="no-kai.png" alt="no-kai">
+<img id="yo-kai788" src="no-kai.png" alt="no-kai">
+<img id="yo-kai789" src="no-kai.png" alt="no-kai">
+<img id="yo-kai790" src="no-kai.png" alt="no-kai">
+<img id="yo-kai791" src="no-kai.png" alt="no-kai">
+<img id="yo-kai792" src="no-kai.png" alt="no-kai">
+<img id="yo-kai793" src="no-kai.png" alt="no-kai">
+<img id="yo-kai794" src="no-kai.png" alt="no-kai">
+<img id="yo-kai795" src="no-kai.png" alt="no-kai">
+<img id="yo-kai796" src="no-kai.png" alt="no-kai">
+<img id="yo-kai797" src="no-kai.png" alt="no-kai">
+<img id="yo-kai798" src="no-kai.png" alt="no-kai">
+<img id="yo-kai799" src="no-kai.png" alt="no-kai">
+<div style="
+    width: calc(100% - 40px);
+    margin: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+">
+    Yo-kai Watch Busters 2
+</div>
+
+<img id="yo-kai800" src="no-kai.png" alt="no-kai">
+<img id="yo-kai801" src="no-kai.png" alt="no-kai">
+<img id="yo-kai802" src="no-kai.png" alt="no-kai">
+<img id="yo-kai803" src="no-kai.png" alt="no-kai">
+<img id="yo-kai804" src="no-kai.png" alt="no-kai">
+<img id="yo-kai805" src="no-kai.png" alt="no-kai">
+<img id="yo-kai806" src="no-kai.png" alt="no-kai">
+<img id="yo-kai807" src="no-kai.png" alt="no-kai">
+<img id="yo-kai808" src="no-kai.png" alt="no-kai">
+<img id="yo-kai809" src="no-kai.png" alt="no-kai">
+<img id="yo-kai810" src="no-kai.png" alt="no-kai">
+<img id="yo-kai811" src="no-kai.png" alt="no-kai">
+<img id="yo-kai812" src="no-kai.png" alt="no-kai">
+<img id="yo-kai813" src="no-kai.png" alt="no-kai">
+<img id="yo-kai814" src="no-kai.png" alt="no-kai">
+<img id="yo-kai815" src="no-kai.png" alt="no-kai">
+<img id="yo-kai816" src="no-kai.png" alt="no-kai">
+<img id="yo-kai817" src="no-kai.png" alt="no-kai">
+<img id="yo-kai818" src="no-kai.png" alt="no-kai">
+<img id="yo-kai819" src="no-kai.png" alt="no-kai">
+<img id="yo-kai820" src="no-kai.png" alt="no-kai">
+<img id="yo-kai821" src="no-kai.png" alt="no-kai">
+<img id="yo-kai822" src="no-kai.png" alt="no-kai">
+<img id="yo-kai823" src="no-kai.png" alt="no-kai">
+<img id="yo-kai824" src="no-kai.png" alt="no-kai">
+<img id="yo-kai825" src="no-kai.png" alt="no-kai">
+<img id="yo-kai826" src="no-kai.png" alt="no-kai">
+<img id="yo-kai827" src="no-kai.png" alt="no-kai">
+<img id="yo-kai828" src="no-kai.png" alt="no-kai">
+<img id="yo-kai829" src="no-kai.png" alt="no-kai">
+<img id="yo-kai830" src="no-kai.png" alt="no-kai">
+<img id="yo-kai831" src="no-kai.png" alt="no-kai">
+<img id="yo-kai832" src="no-kai.png" alt="no-kai">
+<img id="yo-kai833" src="no-kai.png" alt="no-kai">
+<img id="yo-kai834" src="no-kai.png" alt="no-kai">
+<img id="yo-kai835" src="no-kai.png" alt="no-kai">
+<img id="yo-kai836" src="no-kai.png" alt="no-kai">
+<img id="yo-kai837" src="no-kai.png" alt="no-kai">
+<img id="yo-kai838" src="no-kai.png" alt="no-kai">
+<img id="yo-kai839" src="no-kai.png" alt="no-kai">
+<img id="yo-kai840" src="no-kai.png" alt="no-kai">
+<img id="yo-kai841" src="no-kai.png" alt="no-kai">
+<img id="yo-kai842" src="no-kai.png" alt="no-kai">
+<img id="yo-kai843" src="no-kai.png" alt="no-kai">
+<img id="yo-kai844" src="no-kai.png" alt="no-kai">
+<img id="yo-kai845" src="no-kai.png" alt="no-kai">
+<img id="yo-kai846" src="no-kai.png" alt="no-kai">
+<img id="yo-kai847" src="no-kai.png" alt="no-kai">
+<img id="yo-kai848" src="no-kai.png" alt="no-kai">
+<img id="yo-kai849" src="no-kai.png" alt="no-kai">
+<img id="yo-kai850" src="no-kai.png" alt="no-kai">
+<img id="yo-kai851" src="no-kai.png" alt="no-kai">
+<img id="yo-kai852" src="no-kai.png" alt="no-kai">
+<img id="yo-kai853" src="no-kai.png" alt="no-kai">
+<img id="yo-kai854" src="no-kai.png" alt="no-kai">
+<img id="yo-kai855" src="no-kai.png" alt="no-kai">
+<img id="yo-kai856" src="no-kai.png" alt="no-kai">
+<img id="yo-kai857" src="no-kai.png" alt="no-kai">
+<img id="yo-kai858" src="no-kai.png" alt="no-kai">
+<img id="yo-kai859" src="no-kai.png" alt="no-kai">
+<img id="yo-kai860" src="no-kai.png" alt="no-kai">
+<img id="yo-kai861" src="no-kai.png" alt="no-kai">
+<img id="yo-kai862" src="no-kai.png" alt="no-kai">
+<img id="yo-kai863" src="no-kai.png" alt="no-kai">
+<img id="yo-kai864" src="no-kai.png" alt="no-kai">
+<img id="yo-kai865" src="no-kai.png" alt="no-kai">
+<img id="yo-kai866" src="no-kai.png" alt="no-kai">
+<img id="yo-kai867" src="no-kai.png" alt="no-kai">
+<img id="yo-kai868" src="no-kai.png" alt="no-kai">
+<img id="yo-kai869" src="no-kai.png" alt="no-kai">
+<img id="yo-kai870" src="no-kai.png" alt="no-kai">
+<div style="
+    width: calc(100% - 40px);
+    margin: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+">
+    Yo-kai Watch 4
+</div>
+
+<img id="yo-kai871" src="no-kai.png" alt="no-kai">
+<img id="yo-kai872" src="no-kai.png" alt="no-kai">
+<img id="yo-kai873" src="no-kai.png" alt="no-kai">
+<img id="yo-kai874" src="no-kai.png" alt="no-kai">
+<img id="yo-kai875" src="no-kai.png" alt="no-kai">
+<img id="yo-kai876" src="no-kai.png" alt="no-kai">
+<img id="yo-kai877" src="no-kai.png" alt="no-kai">
+<img id="yo-kai878" src="no-kai.png" alt="no-kai">
+<img id="yo-kai879" src="no-kai.png" alt="no-kai">
+<img id="yo-kai880" src="no-kai.png" alt="no-kai">
+<img id="yo-kai881" src="no-kai.png" alt="no-kai">
+<img id="yo-kai882" src="no-kai.png" alt="no-kai">
+<img id="yo-kai883" src="no-kai.png" alt="no-kai">
+<img id="yo-kai884" src="no-kai.png" alt="no-kai">
+<img id="yo-kai885" src="no-kai.png" alt="no-kai">
+<img id="yo-kai886" src="no-kai.png" alt="no-kai">
+<img id="yo-kai887" src="no-kai.png" alt="no-kai">
+<img id="yo-kai888" src="no-kai.png" alt="no-kai">
+<img id="yo-kai889" src="no-kai.png" alt="no-kai">
+<img id="yo-kai890" src="no-kai.png" alt="no-kai">
+<img id="yo-kai891" src="no-kai.png" alt="no-kai">
+<img id="yo-kai892" src="no-kai.png" alt="no-kai">
+<img id="yo-kai893" src="no-kai.png" alt="no-kai">
+<img id="yo-kai894" src="no-kai.png" alt="no-kai">
+<img id="yo-kai895" src="no-kai.png" alt="no-kai">
+<img id="yo-kai896" src="no-kai.png" alt="no-kai">
+<img id="yo-kai897" src="no-kai.png" alt="no-kai">
+<img id="yo-kai898" src="no-kai.png" alt="no-kai">
+<img id="yo-kai899" src="no-kai.png" alt="no-kai">
+<img id="yo-kai900" src="no-kai.png" alt="no-kai">
+<img id="yo-kai901" src="no-kai.png" alt="no-kai">
+<img id="yo-kai902" src="no-kai.png" alt="no-kai">
+<img id="yo-kai903" src="no-kai.png" alt="no-kai">
+<img id="yo-kai904" src="no-kai.png" alt="no-kai">
+<img id="yo-kai905" src="no-kai.png" alt="no-kai">
+<img id="yo-kai906" src="no-kai.png" alt="no-kai">
+<img id="yo-kai907" src="no-kai.png" alt="no-kai">
+<img id="yo-kai908" src="no-kai.png" alt="no-kai">
+<img id="yo-kai909" src="no-kai.png" alt="no-kai">
+<img id="yo-kai910" src="no-kai.png" alt="no-kai">
+<img id="yo-kai911" src="no-kai.png" alt="no-kai">
+<img id="yo-kai912" src="no-kai.png" alt="no-kai">
+<img id="yo-kai913" src="no-kai.png" alt="no-kai">
+<img id="yo-kai914" src="no-kai.png" alt="no-kai">
+<img id="yo-kai915" src="no-kai.png" alt="no-kai">
+<img id="yo-kai916" src="no-kai.png" alt="no-kai">
+<img id="yo-kai917" src="no-kai.png" alt="no-kai">
+<img id="yo-kai918" src="no-kai.png" alt="no-kai">
+<img id="yo-kai919" src="no-kai.png" alt="no-kai">
+<img id="yo-kai920" src="no-kai.png" alt="no-kai">
+<img id="yo-kai921" src="no-kai.png" alt="no-kai">
+<img id="yo-kai922" src="no-kai.png" alt="no-kai">
+<img id="yo-kai923" src="no-kai.png" alt="no-kai">
+<img id="yo-kai924" src="no-kai.png" alt="no-kai">
+<img id="yo-kai925" src="no-kai.png" alt="no-kai">
+<img id="yo-kai926" src="no-kai.png" alt="no-kai">
+<img id="yo-kai927" src="no-kai.png" alt="no-kai">
+<img id="yo-kai928" src="no-kai.png" alt="no-kai">
+<img id="yo-kai929" src="no-kai.png" alt="no-kai">
+<img id="yo-kai930" src="no-kai.png" alt="no-kai">
+<img id="yo-kai931" src="no-kai.png" alt="no-kai">
+<img id="yo-kai932" src="no-kai.png" alt="no-kai">
+<img id="yo-kai933" src="no-kai.png" alt="no-kai">
+<img id="yo-kai934" src="no-kai.png" alt="no-kai">
+<img id="yo-kai935" src="no-kai.png" alt="no-kai">
+<img id="yo-kai936" src="no-kai.png" alt="no-kai">
+<img id="yo-kai937" src="no-kai.png" alt="no-kai">
+<img id="yo-kai938" src="no-kai.png" alt="no-kai">
+<img id="yo-kai939" src="no-kai.png" alt="no-kai">
+<img id="yo-kai940" src="no-kai.png" alt="no-kai">
+<img id="yo-kai941" src="no-kai.png" alt="no-kai">
+<img id="yo-kai942" src="no-kai.png" alt="no-kai">
+<img id="yo-kai943" src="no-kai.png" alt="no-kai">
+<img id="yo-kai944" src="no-kai.png" alt="no-kai">
+<img id="yo-kai945" src="no-kai.png" alt="no-kai">
+<img id="yo-kai946" src="no-kai.png" alt="no-kai">
+<img id="yo-kai947" src="no-kai.png" alt="no-kai">
+<img id="yo-kai948" src="no-kai.png" alt="no-kai">
+<img id="yo-kai949" src="no-kai.png" alt="no-kai">
+<img id="yo-kai950" src="no-kai.png" alt="no-kai">
+<img id="yo-kai951" src="no-kai.png" alt="no-kai">
+<img id="yo-kai952" src="no-kai.png" alt="no-kai">
+<img id="yo-kai953" src="no-kai.png" alt="no-kai">
+<img id="yo-kai954" src="no-kai.png" alt="no-kai">
+<img id="yo-kai955" src="no-kai.png" alt="no-kai">
+<img id="yo-kai956" src="no-kai.png" alt="no-kai">
+<img id="yo-kai957" src="no-kai.png" alt="no-kai">
+<img id="yo-kai958" src="no-kai.png" alt="no-kai">
+<img id="yo-kai959" src="no-kai.png" alt="no-kai">
+<img id="yo-kai960" src="no-kai.png" alt="no-kai">
+<img id="yo-kai961" src="no-kai.png" alt="no-kai">
+<img id="yo-kai962" src="no-kai.png" alt="no-kai">
+<img id="yo-kai963" src="no-kai.png" alt="no-kai">
+<img id="yo-kai964" src="no-kai.png" alt="no-kai">
+<img id="yo-kai965" src="no-kai.png" alt="no-kai">
+<img id="yo-kai966" src="no-kai.png" alt="no-kai">
+<img id="yo-kai967" src="no-kai.png" alt="no-kai">
+<img id="yo-kai968" src="no-kai.png" alt="no-kai">
+<img id="yo-kai969" src="no-kai.png" alt="no-kai">
+<img id="yo-kai970" src="no-kai.png" alt="no-kai">
+<img id="yo-kai971" src="no-kai.png" alt="no-kai">
+<img id="yo-kai972" src="no-kai.png" alt="no-kai">
+<img id="yo-kai973" src="no-kai.png" alt="no-kai">
+<img id="yo-kai974" src="no-kai.png" alt="no-kai">
+<img id="yo-kai975" src="no-kai.png" alt="no-kai">
+<img id="yo-kai976" src="no-kai.png" alt="no-kai">
+<img id="yo-kai977" src="no-kai.png" alt="no-kai">
+<img id="yo-kai978" src="no-kai.png" alt="no-kai">
+<img id="yo-kai979" src="no-kai.png" alt="no-kai">
+<img id="yo-kai980" src="no-kai.png" alt="no-kai">
+<img id="yo-kai981" src="no-kai.png" alt="no-kai">
+<img id="yo-kai982" src="no-kai.png" alt="no-kai">
+<img id="yo-kai983" src="no-kai.png" alt="no-kai">
+<img id="yo-kai984" src="no-kai.png" alt="no-kai">
+<img id="yo-kai985" src="no-kai.png" alt="no-kai">
+<img id="yo-kai986" src="no-kai.png" alt="no-kai">
+<img id="yo-kai987" src="no-kai.png" alt="no-kai">
+
+ </div>
+
+        <input type="text" id="answer-input" placeholder="Type the Yo-kai's name.">
+        <div class="info">
+            <p>Time: <span id="time">00:00:00</span></p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
