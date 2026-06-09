@@ -178,7 +178,7 @@ function showCongratsImage() {
     finalPanel.style.right = "-350px";
     finalPanel.style.width = "320px";
     finalPanel.style.height = "100%";
-    finalPanel.style.backgroundColor = "#0b2a4a";
+    finalPanel.style.backgroundColor = "#15868c";
     finalPanel.style.color = "white";
     finalPanel.style.padding = "20px";
     finalPanel.style.boxSizing = "border-box";
